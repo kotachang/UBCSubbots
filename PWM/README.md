@@ -9,6 +9,10 @@ The schematic/pinout is the lower right of the file `PCA9685_pinout.png`, which 
 * [Here is technical info on i2c, good to know](https://i2c.info)
 * [Here is the datasheet on the PCA9685, has some nice PWM stuff](https://github.com/kotachang/UBCSubbots/blob/master/PWM/PCA9685.pdf)
 
+## PCA9685 Setup
+
+![work_plz](images/pinout_irl.png)
+
 ## RaspberryPi Setup
 
 The Raspberry Pi is great for quick prototyping, and that is what I used to figure out basic operation of the PCA9685. [Here](https://pinout.xyz/pinout/i2c) is another good resource. To get that going, you have to do a couple steps:
@@ -30,7 +34,7 @@ sudo pip3 install adafruit-circuitpython-pca9685
 sudo pip3 install adafruit-circuitpython-servokit
 ```
 
-2. Copy and create this new file:
+2. Copy and create this new file. Run with python3 (e.g. `python3 filename.py`):
 
 ```python
 # This simple test outputs a 50% duty cycle PWM single on the 0th channel. Connect an LED and
@@ -57,3 +61,7 @@ pca.channels[0].duty_cycle = 0x7fff
 ```
 
 3. Play with `pca.frequency` to change the frequency of your PWM wave, and `pca.channels[n].duty_cycle` to change the duty cycle of channel n.
+
+## WIP
+
+This is currently a work in progress. So far, I have verified that the PWM modules work, and how to get them to work using [this](https://learn.adafruit.com/16-channel-pwm-servo-driver?view=all).

@@ -13,7 +13,7 @@ The schematic/pinout is the lower right of the file `PCA9685_pinout.png`, which 
 ## PCA9685 Setup
 
 Please checkout the file `PCA9685_pinout.png` for a full pinout. But if you don't, here is the important bits.
-![work_plz](images/pinout_irl.jpg)
+![work_plz](images/pinout_irl.JPG)
 Note that if you reverse bias power and ground, you will make the IC very hot; however, it seems like it doesn't break if you catch it fast enough. If you reverse bias SCL and SDA, its no big deal, but i2c wont work. Best not to do it.
 
 ## Why Raspberry Pi

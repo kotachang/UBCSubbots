@@ -2,7 +2,7 @@
 
 How to calibrate fisheye cameras for ROS: A short guide, so you don't have to waste time like I did. This is using Matlab's app 'Camera Calibrator' app.
 
-NOTE: I wrote a script to automate this, so hopefully that will just work. It should be called `calibrationParamsToYaml.m`
+*NOTE: I wrote a script to automate this, so hopefully that will just work. It should be called `calibrationParamsToYaml.m`*
 
 Here are the steps.
 

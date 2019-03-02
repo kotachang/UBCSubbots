@@ -10,11 +10,15 @@ Here are the steps.
 
 3. Click "add images" - add the images that you took in step 1. Follow its prompts. If it rejects too many of your images, then try taking photos again. You should have a minimum of 10-15 images.
 
-4. Once you have gone through the "add images" prompts, you should be back at the main screen. Set 'Camera Model' to standard (if that option is there). Set 'Radial Distortion' to three coefficients, and set 'Compute' to compute both skew and Tangential Distortion. I don't think we will ever really use skew, but better to have it and not need it than to need it and not have it.
+4. Once you have gone through the "add images" prompts, you should be back at the main screen. Set 'Camera Model' to standard (if that option is there). Set 'Radial Distortion' to three coefficients, and set 'Compute' to compute both skew and Tangential Distortion. For 2018 + Matlab Camera Model: Standard then under options is the 'Radial Distortion' and 'Compute'. I don't think we will ever really use skew, but better to have it and not need it than to need it and not have it.
 
 5. Click calibrate
 
+6. Export Camera Parameters into the 'Workspace' then run the yam.l file, further instructions are in the yam.l file 'calibrationParamstoYaml.m'
+
 So now you can export your Camera Parameters. The next thing will be to take the cameraParams object that you get, and to throw it into a .yaml file that ROS can deal with. These two articles are what I am basing this off of.
+
+
 
 [ROS Info](http://docs.ros.org/api/sensor_msgs/html/msg/CameraInfo.html)
 

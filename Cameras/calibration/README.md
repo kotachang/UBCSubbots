@@ -2,27 +2,27 @@
 
 How to calibrate fisheye cameras for ROS: A short guide. This is using Matlab's app 'Camera Calibrator' app.
 
-*NOTE: I wrote a script to automate this, so hopefully that will just work. It should be called `calibrationParamsToYaml.m`*
-
 Here are the steps.
 
 1. Using the camera that you are calibrating, take a bunch of photos of a chess board. If you don't have one at hand, print one out and lay it flat on a table.
 
 2. Open the Matlab App 'Camera Calibrator'. If you don't have it, download it.
 
-3. Click "add images" - add the images that you took in step 1. Follow its prompts. If it rejects too many of your images, then try taking photos again. You should have a minimum of 10-15 images.
+3. Click "add images" - add the images that you took in step 1. Follow its prompts (if you are using UBC Snowbot's chess board, the square width is 32 mm - else, you have to measure it yourself). If it rejects too many of your images, then try taking photos again. You should have a minimum of 10-15 images.
 
 4. Once you have gone through the "add images" prompts, you should be back at the main screen. Set 'Radial Distortion' to three coefficients, and set 'Compute' to compute both skew and Tangential Distortion. I don't think we will ever really use skew, but better to have it and not need it than to need it and not have it.
 
 5. Click calibrate
 
-So now you can export your Camera Parameters. The next thing will be to take the cameraParams object that you get, and to throw it into a .yaml file that ROS can deal with. These two articles are what I am basing this off of.
+So now you can export your Camera Parameters. Click Export Camera Parameters drop down menu, and click 'Export Camera Parameters to Workspace'. The next thing will be to take the cameraParams object that you get, and to throw it into a .yaml file that ROS can deal with. You can do this by running `calibrationParamsToYaml.m`.
+
+These two articles are what I am basing this script off of:
 
 [ROS Info](http://docs.ros.org/api/sensor_msgs/html/msg/CameraInfo.html)
 
 [MATLAB Info](https://se.mathworks.com/help/vision/ref/cameraparameters.html)
 
-## Here is a summary of important points. We will go through point by point
+## Here is a summary of what the yaml file looks like. This is the output of `calibrationParamsToYaml.m`.
 
 you want to end up with something like this:
 

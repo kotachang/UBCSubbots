@@ -8,7 +8,7 @@ Here are the steps.
 
 2. Open the Matlab App 'Camera Calibrator'. If you don't have it, download it.
 
-3. Click "add images" - add the images that you took in step 1. Follow its prompts. If it rejects too many of your images, then try taking photos again. You should have a minimum of 10-15 images.
+3. Click "add images" - add the images that you took in step 1. Follow its prompts (if you are using UBC Snowbot's chess board, the square width is 32 mm - else, you have to measure it yourself). If it rejects too many of your images, then try taking photos again. You should have a minimum of 10-15 images.
 
 4. Once you have gone through the "add images" prompts, you should be back at the main screen. Set 'Camera Model' to standard (if that option is there). Set 'Radial Distortion' to three coefficients, and set 'Compute' to compute both skew and Tangential Distortion. For 2018 + Matlab Camera Model: Standard then under options is the 'Radial Distortion' and 'Compute'. I don't think we will ever really use skew, but better to have it and not need it than to need it and not have it.
 
@@ -24,7 +24,7 @@ So now you can export your Camera Parameters. The next thing will be to take the
 
 [MATLAB Info](https://se.mathworks.com/help/vision/ref/cameraparameters.html)
 
-## Here is a summary of important points. We will go through point by point
+## Here is a summary of what the yaml file looks like. This is the output of `calibrationParamsToYaml.m`.
 
 you want to end up with something like this:
 

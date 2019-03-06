@@ -17,7 +17,7 @@
 %      using.
 %   4. Run the file and enjoy!
 
-cameraParamObj = cameraParamsIMU;
+cameraParamObj = CAMERA_PARAM_OBJECT;
 fileID = fopen('OUTPUT_FILE.yaml','w');
 camera_name = 'CAMERA_NAME';
 
@@ -27,7 +27,7 @@ rd = cameraParams.RadialDistortion;
 td = cameraParams.TangentialDistortion;
 
 fprintf(fileID,'image_width: %d\n',cameraParamObj.ImageSize(1,1));
-fprintf(fileID,'image_width: %d\n',cameraParamObj.ImageSize(1,2));
+fprintf(fileID,'image_height: %d\n',cameraParamObj.ImageSize(1,2));
 fprintf(fileID,'camera_name: %s\n', camera_name);
 fprintf(fileID,'camera_matrix:\n  rows: 3\n  cols: 3\n  data: [%9f %9f %9f %9f %9f %9f %9f %9f %9f]\n', ...
     iMT(1,1), iMT(1,2), iMT(1,3), ...

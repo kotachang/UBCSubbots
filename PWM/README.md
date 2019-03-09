@@ -48,11 +48,9 @@ sudo pip3 install adafruit-circuitpython-servokit
 2. Copy and create this new file. Run with python3 (e.g. `python3 filename.py`):
 
 ```python
-# This simple test outputs a 50% duty cycle PWM single on the 0th channel. Connect an LED and
-# resistor in series to the pin to visualize duty cycle changes and its impact on brightness.
-
 from board import SCL, SDA
 import busio
+import time
 
 # Import the PCA9685 module.
 from adafruit_pca9685 import PCA9685
@@ -63,19 +61,36 @@ i2c_bus = busio.I2C(SCL, SDA)
 # Create a simple PCA9685 class instance.
 pca = PCA9685(i2c_bus)
 
-# Set the PWM frequency to 60hz.
-pca.frequency = 60
+# Set the PWM frequency to 50hz.
+pca.frequency = 50
 
-# Set the PWM duty cycle for channel zero to 50%. duty_cycle is 16 bits to match other PWM objects
-# but the PCA9685 will only actually give 12 bits of resolution.
-pca.channels[0].duty_cycle = 0x7fff
+# Set the duty cycle to 1.5 ms (or 0x1333 in this case)
+pca.channels[0].duty_cycle = 0x1333
+
+# Wait for initialization from the motor (motor should have a low and then a high beep)
+time.sleep(3)
+
+# Motor is initialized, so change duty cycle to control the motor
+pca.channels[0].duty_cycle = 0x1729
 ```
 
-3. Play with `pca.frequency` to change the frequency of your PWM wave, and `pca.channels[n].duty_cycle` to change the duty cycle of channel n.
+3. Play with  `pca.channels[n].duty_cycle` to change the duty cycle of channel n.
 
-## WIP
+## Motor Initialization
 
-This is currently a work in progress. So far, I have verified that the PWM modules work, and how to get them to work using [this](https://learn.adafruit.com/16-channel-pwm-servo-driver?view=all).
+Motor initialization is required before using the motors. When you turn on the motors, it should play three raising tones. Initialization occurs when you run the following code:
+
+```python
+pca.frequency = 50
+
+# Set the duty cycle to 1.5 ms (or 0x1333 in this case)
+pca.channels[0].duty_cycle = 0x1333
+
+# Wait for initialization from the motor (motor should have a low and then a high beep)
+time.sleep(3)
+```
+
+PWM frequency is 50 Hz. A duty cycle of `0x1333` is a 1.5 ms duty cycle. 
 
 ### TODO
 

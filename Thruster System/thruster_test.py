@@ -11,8 +11,11 @@ from adafruit_pca9685 import PCA9685
 '''
 This function corrects for the misgivings of the optocoupler that we are using. For one, it inverts our output. Therefore, when enable is true (controlled by us, set to true when sending signal through the optocoupler), we invert our input. It also has a rise and fall time which shortens the pulse width of our signal, so fudge_factor adds back to that. Found via experimentation or by estimating rise/fall times (65535 * <ESTIMATED RISE/FALL TIME IN MS>/20ms)
 '''
+
+
 def invert(pulse_length, enable, fudge_factor):
     return (0xffff - pulse_length - fudge_factor) if enable else (pulse_length + fudge_factor)
+
 
 # Create the I2C bus interface.
 i2c_bus = busio.I2C(SCL, SDA)

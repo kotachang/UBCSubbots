@@ -12,7 +12,7 @@ Write Up Written (Pull Request Up)
 
 ### Battery Monitor
 
-* Diagram (including 3.6 V source^1 for comparators, buffers out of battery, debounce/smoothing (lowpass filter?) )
+* Diagram (including 3.6 V source^1 for comparators, buffers out of battery, debounce/smoothing (lowpass filter?))
 * Writeup (explaining purpose, functionality of circuit, how to create etc)
 
 ### Relays/Kill Switch
@@ -22,11 +22,11 @@ Write Up Written (Pull Request Up)
 
 ### Cameras/IMU
 
-* Just hook it up (? all usb)
+* Just hook it up (? all USB)
 
 ### Sensor (Pressure, Leak)
 
-* These are both reading I2C - this is up to you. :) UWU
+* These are both reading I2C - this is up to you.
 
 ### Safety
 

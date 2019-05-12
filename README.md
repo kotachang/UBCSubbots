@@ -2,33 +2,33 @@
 
 Newspaper eating contest 2x champions
 
---
+---
 
 ## Major Subsystems
 
 ### Thruster System
 
-Write Up Written (Pull Request Up)
+Writeup complete
 
 ### Battery Monitor
 
-* Diagram (including 3.6 V source^1 for comparators, buffers out of battery, debounce/smoothing (lowpass filter?))
-* Writeup (explaining purpose, functionality of circuit, how to create etc)
+Writeup Complete
 
 ### Relays/Kill Switch
 
-* Nosotros tienen las cambiar muertas
 * Diagram/Write up
 
 ### Cameras/IMU
 
-* Just hook it up (? all USB)
+* Writeup Complete
 
 ### Sensor (Pressure, Leak)
 
-* These are both reading I2C - this is up to you.
+* Writeup Complete
 
-### Safety
+---
+
+### Circuit Safety Considerations
 
 #### Current safety
 

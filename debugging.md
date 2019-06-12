@@ -5,6 +5,7 @@
 ### 1 Modularity
 
 This is a key concept. Computer scientists stole this from electrical engineers in the 70s because they recognized the value of this principle. The essence is trying to make parts of a circuit do one thing at a time. Consider the following active low-pass filter:
+
 ![A low pass filter with gain 10](misc_images/fil29.gif)
 
 This circuit acts as a low pass filter, but also provides a gain of 10 to the input.

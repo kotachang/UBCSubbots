@@ -5,7 +5,7 @@
 ### 1 Modularity
 
 This is a key concept. Computer scientists stole this from electrical engineers in the 70s because they recognized the value of this principle. The essence is trying to make parts of a circuit do one thing at a time. Consider the following active low-pass filter:
-![A low pass filter with gain 10](https://www.electronics-tutorials.ws/wp-content/uploads/2018/07/fil29.gif)
+![A low pass filter with gain 10](misc_images/fil29.gif)
 
 This circuit acts as a low pass filter, but also provides a gain of 10 to the input.
 
@@ -77,4 +77,4 @@ Ultimately, there is only one algorithm to solving a hard problem. It has nicely
 Maybe some tools of the trade that are useful for debugging. Wireshark/serial port monitors, making LTSPice simulations to check if the issue is systematic to the design, or if it's an implementation issue etc. TODO
 
 **Appendix B:**
-Debugging often comes from experience, and part of that is knowing how things can go wrong. It might be nice (but possibly not worth the effort) to jot down some really annoying bugs you've come across, and the fix TODO
+Debugging often comes from experience, and part of that is knowing how things can go wrong. It might be nice (but possibly not worth the effort) to jot down some really annoying bugs you've come across, and the fix TODObhj

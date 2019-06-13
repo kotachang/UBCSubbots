@@ -39,10 +39,10 @@ A typical system will be comprised of large modules connected together. Each mod
 
 The algorithm for finding a bug in a typical circuit goes:
 
-1) Look at one of the largest modules, preferably the one that you suspect is causing issues, and check the output for a few inputs. Ideally you can check the input that breaks the circuit, but this may not always be known. If the input works, move to the next large module.
+1) Look at one of the largest modules, preferably the one that you suspect is causing issues, and check the output for a few inputs. The best way to do this is with an oscilloscope. Ideally you can check the input that breaks the circuit, but this may not always be known. If the input works, move to the next large module.
 
 2) When you find a module that is having unexpected behaviour, zoom in and check a smaller inner modules.
-3) Eventually you'll just have a circuit of a few irreducible components chained together. Check the output of the first component, if it as expected, move to the next component, until you find the exact component that breaks.
+3) Eventually you'll just have a circuit of a few irreducible components chained together. Check the output of the first component, if it as expected, move to the next component, until you find the exact component that breaks. Hypothetically you could use a binary search to speed up the process, but it is often nice to go about it one by one systematically to be sure.
 
 It's normal to find bugs when prototyping a smaller component. In this case you can just start at step 3 if it is convenient. Alternatively, one may be confident that the bug is in a certain small module. In this case, one can also skip directly to step 3.
 
@@ -68,7 +68,7 @@ Even if the behaviour of a given bug points all fingers to a giant sign saying "
 
 It is a bit of a judgement call as to when it is worth going through the effort to check a harder explanation to a bug first. There are no hard rules here.
 
-In my personal experience the most likely causes of a given issue are: wires shorting, wires not making a proper contact, ICs getting fried by static electricity, and NOT READING THE DATASHEET.
+In my personal experience the most likely causes of a given issue are: wires shorting, wires not making a proper contact, ICs getting fried by static electricity, and not reading the datasheet.
 
 Ultimately, there is only one algorithm to solving a hard problem. It has nicely been described by Richard Feynman as:
 
@@ -77,7 +77,7 @@ Ultimately, there is only one algorithm to solving a hard problem. It has nicely
 3) write down (and test!) the solution
 
 **Appendix A:**
-Maybe some tools of the trade that are useful for debugging. Wireshark/serial port monitors, making LTSPice simulations to check if the issue is systematic to the design, or if it's an implementation issue etc. TODO
+TODO: Some tools of the trade that are useful for debugging. Wireshark/serial port monitors, making LTSPice simulations to check if the issue is systemic to the design, or if it's an implementation issue etc.
 
 **Appendix B:**
-Debugging often comes from experience, and part of that is knowing how things can go wrong. It might be nice (but possibly not worth the effort) to jot down some really annoying bugs you've come across, and the fix TODObhj
+TODO: Debugging often comes from experience, and part of that is knowing how things can go wrong. This section is dedicated to list annoying bugs that we have run across, and the fix.

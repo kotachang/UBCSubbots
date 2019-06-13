@@ -18,11 +18,11 @@ b) The cut off frequency being too low
 
 The ambiguity makes it hard to reason out what the issue is, and adds an extra step to debugging the circuit. Had the circuit been a low pass of gain ~1 connected to a amplifier of gain 10, one could check the two circuits individually, and the circuit would have been much more simple to debug.
 
-    This particular example was chosen because there is a way out. One can simply set the input to a DC voltage in order to check the gain independently of the transfer function. This is important, as there is also a trade off to splitting the  circuit into too many components. An easy testing procedure (such as feeding a DC voltage to check the gain of the circuit above) makes it okay to combine components. One can easily imagine a circuit where it is much harder to check, and should be split up.
+This particular example was chosen because there is a way out. One can simply set the input to a DC voltage in order to check the gain independently of the transfer function. This is important, as there is also a trade off to splitting the  circuit into too many components. An easy testing procedure (such as feeding a DC voltage to check the gain of the circuit above) makes it okay to combine components. One can easily imagine a circuit where it is much harder to check, and should be split up.
 
-    The key message is this: in general, don't make components/small circuits do too many things. It's easier to debug separate small circuits that chain together.
+The key message is this: in general, don't make components/small circuits do too many things. It's easier to debug separate small circuits that chain together.
 
-    As a quick exercise, try to imagine how you would debug a band-pass filter with gain 10 that's providing an amplitude that's ~5% lower than expected. It's hard to use a DMM to measure capacitance and inductance exactly, so you only know the peak frequency within 5%. Assume everything is soldered.
+As a quick exercise, try to imagine how you would debug a band-pass filter with gain 10 that's providing an amplitude that's ~5% lower than expected. It's hard to use a DMM to measure capacitance and inductance exactly, so you only know the peak frequency within 5%. Assume everything is soldered.
 
 ### 2 Inputs/Outputs to a component
 A good component has clearly defined outputs for a given input. This makes it easy to use an oscilloscope to check whether or not this particular component is causing issues. A component that has an inner state (output depends on input, and possibly past inputs), or depends on many inputs, becomes very hard to check, as the bug may only arise in one particular situation. Checking every possible combination of inputs and states becomes necessary.
@@ -62,11 +62,11 @@ a) How likely it is that the reason is correct.
 
 b) How easy it is to check the reasoning.
 
-    The behaviour of a certain bug may point towards a certain explanation for the error, but it may be worth exploring alternative reasons if the explanation is too difficult to check.
+The behaviour of a certain bug may point towards a certain explanation for the error, but it may be worth exploring alternative reasons if the explanation is too difficult to check.
 
-    Even if the behaviour of a given bug points all fingers to a giant sign saying "the reason is REASON_A", it would still be better to check REASON_B if checking REASON_A would require reformulating quantum mechanics to do so. In total, if it is easier to check less likely scenarios when the most likely scenario is really difficult to check, check the less likely scenarios first.
+Even if the behaviour of a given bug points all fingers to a giant sign saying "the reason is REASON_A", it would still be better to check REASON_B if checking REASON_A would require reformulating quantum mechanics to do so. In total, if it is easier to check less likely scenarios when the most likely scenario is really difficult to check, check the less likely scenarios first.
 
-    In my personal experience the most likely causes of a given issue are: wires shorting, wires not making a proper contact, ICs getting fried by static electricity, and NOT READING THE DATASHEET.
+In my personal experience the most likely causes of a given issue are: wires shorting, wires not making a proper contact, ICs getting fried by static electricity, and NOT READING THE DATASHEET.
 
 Ultimately, there is only one algorithm to solving a hard problem. It has nicely been described by Richard Feynman as:
 

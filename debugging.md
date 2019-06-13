@@ -66,6 +66,8 @@ The behaviour of a certain bug may point towards a certain explanation for the e
 
 Even if the behaviour of a given bug points all fingers to a giant sign saying "the reason is REASON_A", it would still be better to check REASON_B first if checking REASON_A would require reformulating quantum mechanics to do so. One can attempt REASON_A after quickly confirming that REASON_B does not explain the incorrect behaviour. In total, if it is easier to check less likely scenarios when the most likely scenario is really difficult to check, check the less likely scenarios first.
 
+It is a bit of a judgement call as to when it is worth going through the effort to check a harder explanation to a bug first. There are no hard rules here.
+
 In my personal experience the most likely causes of a given issue are: wires shorting, wires not making a proper contact, ICs getting fried by static electricity, and NOT READING THE DATASHEET.
 
 Ultimately, there is only one algorithm to solving a hard problem. It has nicely been described by Richard Feynman as:

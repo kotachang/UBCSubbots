@@ -29,7 +29,7 @@ A good component has clearly defined outputs for a given input. This property ma
 
 ### 3 Considerations with ICs
 
-- Many ICs are sensitive to static electricity. One can get rid of much headache by ensuring that they discharge static electricity before handling ICs. It's customary to look over at the person next to you, declare "ground yourself!", and then smack a piece of metal such as a table leg to do this. Some say you can skip the first too steps, but I'm not sure.
+- Many ICs are sensitive to static electricity. One can get rid of much headache by ensuring that they discharge static electricity before handling ICs. It's customary to look over at the person next to you, declare "ground yourself!", and then smack a piece of metal such as a table leg to do this. Some say you can skip the first two steps, but I'm not sure.
 - Many ICs have multiple components loaded onto a single chip. It's rare to see an IC with only one `and` gate or comparator on it. Using the same chip for multiple purposes can make it hard to tell exactly what is going on, or make it hard to probe.
 - It is tempting to use one IC per circuit component, and give circuits large physical separation to make it easier to probe. However, making small circuits is required for easy mechanical integration of circuits. There is often a trade off between making the circuit easier to debug, and the physical size of a circuit. Deciding exactly how to plan a circuit in consideration of this takes experience and communication with the mechanical team.
 

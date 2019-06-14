@@ -48,15 +48,23 @@ It's normal to find bugs when prototyping a smaller component. In this case you 
 
 ## Fixing a bug
 
+### The Process
+
 To figure out exactly what the bug is takes experience and perseverance.
 
 There are three steps to fixing a bug
 
-1) Come up with a likely reason for the bug. What is causing the incorrect behaviour?
-2) Check whether or not the explanation is correct. Return to step 1 if not.
+1) Come up with a hypothesis about the likely cause for the bug. What is causing the incorrect behaviour?
+2) Test whether or not the explanation is correct. Return to step 1 if not.
 3) Think of, and implement a solution
 
-When thinking of the reason behind a bug, there are two things to consider
+A good debugging process draws from the scientific method.
+
+![The scientific method](misc_images/scientific-method.png)
+
+### Picking the hypothesis
+
+When considering which hypothesis to test, there are two things to consider
 
 a) How likely it is that the reason is correct.
 
@@ -68,13 +76,28 @@ Even if the behaviour of a given bug points all fingers to a giant sign saying "
 
 It is a bit of a judgement call as to when it is worth going through the effort to check a harder explanation to a bug first. There are no hard rules here.
 
-In my personal experience the most likely causes of a given issue are: wires shorting, wires not making a proper contact, ICs getting fried by static electricity, and not reading the datasheet.
+In my personal experience the most likely causes of a given issue are: wires shorting, wires not making a proper contact, ICs getting fried by static electricity, and missing critical specification on the datasheet. Thankfully, all of these, bar the last reason, are fairly easy to test.
+
+### The experiment
+
+There are a number of properties that separate a good experiment from a bad one. A good experiment should:
+
+1) Be driven by hypothesis. You don't need to formally write out the problem statement, and hypothesis (though on a sufficiently hard problem you probably should). However, there is a lot of time to be lost by attacking a bug by tinkering. Aside from issues of time efficiency, it is possible that by randomly tinkering with the circuit the incorrect behaviour is removed, but the underlying issue is not dealt with. Further modification down the circuit could easily cause the bug to rearise, possibly after it has been fully soldered in.
+
+2) Change only one thing. As engineers we want to be deliberate. An experiment that changes many things might lead to an incorrect assumption about the underlying cause of the bug. Fully understanding the underlying issue is incredibly useful not just for implementing the solution, but also for being able to quickly recognize when the bug may appear later down the road.
+
+As an aside, please remember to run one experiment at a time. It seems fairly obvious, but I've seen many frustrated people throw the kitchen sink at problems they have been debugging all day. It's very common to come out of an experiment with more problems than one had originally. Doing too many things at once can make this impossible to reverse. Be deliberate.
+
+Now after the experiment has been done, make observations and refine the hypothesis, or use the knowledge gained to implement the solution.
 
 Ultimately, there is only one algorithm to solving a hard problem. It has nicely been described by Richard Feynman as:
 
 1) write down the problem
 2) think really hard
 3) write down (and test!) the solution
+
+As an aside, I've made debugging seem like a step by step structured process. In practice, many of the steps will overlap. Many bugs will be caught while prototyping the original small component rendering the second section useless. As for the third section, it may seem like people are not properly picking a hypothesis. With common bugs people can often recognize the underlying cause of a bug almost instantly after observing the behaviour. Furthermore, the experiment often implements the solution making it seem like one step. That quick process to debugging is still implementing the same approach we are taking, but is simply expedited due to experience. The structured process to lean on is most useful when running into a novel issue.
+
 
 **Appendix A:**
 TODO: Some tools of the trade that are useful for debugging. Wireshark/serial port monitors, making LTSPice simulations to check if the issue is systemic to the design, or if it's an implementation issue etc.

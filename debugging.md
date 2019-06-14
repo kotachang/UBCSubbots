@@ -88,6 +88,8 @@ There are a number of properties that separate a good experiment from a bad one.
 
 As an aside, please remember to run one experiment at a time. It seems fairly obvious, but I've seen many frustrated people throw the kitchen sink at problems they have been debugging all day. It's very common to come out of an experiment with more problems than one had originally. Doing too many things at once can make this impossible to reverse. Be deliberate.
 
+Common examples of an experiment are: checking the input to a component to see if the waveform is deformed, replacing an IC that is suspected to be broken, replacing a microcontroller that is suspected to be broken, and using a DMM to check if pins or wires are shorted.
+
 Now after the experiment has been done, make observations and refine the hypothesis, or use the knowledge gained to implement the solution.
 
 Ultimately, there is only one algorithm to solving a hard problem. It has nicely been described by Richard Feynman as:

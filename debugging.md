@@ -98,8 +98,9 @@ Ultimately, there is only one algorithm to solving a hard problem. It has nicely
 2) think really hard
 3) write down (and test!) the solution
 
-As an aside, I've made debugging seem like a step by step structured process. In practice, many of the steps will overlap. Many bugs will be caught while prototyping the original small component rendering the second section useless. As for the third section, it may seem like people are not properly picking a hypothesis. With common bugs people can often recognize the underlying cause of a bug almost instantly after observing the behaviour. Furthermore, the experiment often implements the solution making it seem like one step. That quick process to debugging is still implementing the same approach we are taking, but is simply expedited due to experience. The structured process to lean on is most useful when running into a novel issue.
+## Conclusion
 
+I've made debugging seem like a step by step structured process. In practice, many of the steps will overlap. Many bugs will be caught while prototyping the original small component rendering the second section useless. As for the third section, it may seem like people are not properly picking a hypothesis. With common bugs people can often recognize the underlying cause of a bug almost instantly after observing the behaviour. Furthermore, the experiment often implements the solution making it seem like one step. That quick process to debugging is still implementing the same approach we are taking, but is simply expedited due to experience. The structured process to lean is always useful when running into a novel problem.
 
 **Appendix A:**
 TODO: Some tools of the trade that are useful for debugging. Wireshark/serial port monitors, making LTSPice simulations to check if the issue is systemic to the design, or if it's an implementation issue etc.

@@ -106,4 +106,5 @@ I've made debugging seem like a step by step structured process. In practice, ma
 TODO: Some tools of the trade that are useful for debugging. Wireshark/serial port monitors, making LTSPice simulations to check if the issue is systemic to the design, or if it's an implementation issue etc.
 
 **Appendix B:**
-TODO: Debugging often comes from experience, and part of that is knowing how things can go wrong. This section is dedicated to list annoying bugs that we have run across, and the fix.
+TODO: Debugging often comes from experience, and part of that is knowing how things can go wrong. This section is dedicated to list annoying bugs that we have run across, and the fix. For now we have:
+https://github.com/danluu/debugging-stories

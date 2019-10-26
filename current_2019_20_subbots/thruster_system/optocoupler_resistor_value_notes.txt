@@ -1,0 +1,7 @@
+Pull up resistor Value: 1kOhm, Optocoupler input resistance: 100 Ohm: 
+	Delay PWM - Optocoupler Out: rise time 37 us, fall time: 1.5 us. 
+	500 ohm, rise time 25 us delay, fall time 2.0 us
+	200 ohm, rise time 12 us delay, fall time 3.0 us 
+	100 ohm, rise time 4 us delay, fall time: 3.5 us
+
+

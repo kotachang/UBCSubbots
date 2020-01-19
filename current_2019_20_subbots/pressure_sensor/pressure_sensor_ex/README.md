@@ -14,4 +14,4 @@ Also connect the second GND pin on the Arduino to the ground of the voltage divi
 
 ![Picture_of_thing](images/---)
 
-Pressure Sensor code is located within this repo
+Pressure Sensor code is located within this repo (pressure_sensor_ex.ino)

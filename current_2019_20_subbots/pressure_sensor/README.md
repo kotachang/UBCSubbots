@@ -10,7 +10,7 @@ Green connects to SCL (A5 on UNO, 19 on MEGA)
 
 Also connect the second GND pin on the Arduino to the ground of the voltage divider 
 
-![Circuit_diagram](images/---)
+![Circuit_diagram](images/Circuit_diagram.jpg)
 
 ![Picture_of_thing](images/---)
 

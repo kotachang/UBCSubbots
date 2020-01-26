@@ -1,3 +1,5 @@
 
 ports: to connect to an external switch to toggle between the battery being connected to the monitor circuit or the charger
-relay: 30A rated relay needs to be added at the end (JTN1aS-PA-F-DC-5V), model requested on ultra librarian
+relay: header pins will later be connected to a relay outside of the PCB
+C3: represented as a resistor in the circuit schematic because the capacitor footrpint is larger than resistor footprints, therefore making the routing inconvenient
+

@@ -1,0 +1,18 @@
+CAMtasticDXP Drill Report
+Serial Number:0000-00-00000
+Drill File: C:\Users\Dvir\Documents\Design Team\UBCSubbots\current_2019_20_subbots\PCB\Battery_Monitor\Project Outputs for Battery_Monitor\cam.drl
+Format: 2.3
+Units: English (Inch)
+Step & Repeat Codes Used: NO
+
+
+TOOL		SIZE		COUNT
+====		======		=====
+
+ 1 		0.0280		4
+ 2 		0.0330		24
+ 3 		0.0350		35
+ 4 		0.0360		14
+ 5 		0.0410		2
+ 6 		0.0430		6
+ 7 		0.1340		4

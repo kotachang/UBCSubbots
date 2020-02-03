@@ -1,0 +1,20 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: Battery_Monitor.pcbdoc   2020-02-02  3:25:13 PM
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : Battery_Monitor.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      28mil (0.711mm)                                           Round             4         PTH        0.00inch (0.00mm)
+T2      33mil (0.838mm)                                           Round             24        PTH        0.00inch (0.00mm)
+T3      35mil (0.889mm)                                           Round             35        PTH        0.00inch (0.00mm)
+T4      36mil (0.914mm)                                           Round             14        PTH        0.00inch (0.00mm)
+T5      41mil (1.041mm)                                           Round             2         PTH        0.00inch (0.00mm)
+T6      43mil (1.092mm)                                           Round             6         PTH        0.00inch (0.00mm)
+T7      134mil (3.404mm)                                          Round             4         NPTH       0.00inch (0.00mm)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              89
+
+Total Processing Time (hh:mm:ss) : 00:00:00

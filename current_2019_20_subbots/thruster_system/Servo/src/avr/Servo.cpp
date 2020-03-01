@@ -55,14 +55,14 @@ static inline void handle_interrupts(timer16_Sequence_t timer, volatile uint16_t
     *TCNTn = 0; // channel set to -1 indicated that refresh interval completed so reset the timer
   else{
     if( SERVO_INDEX(timer,Channel[timer]) < ServoCount && SERVO(timer,Channel[timer]).Pin.isActive == true )
-      digitalWrite( SERVO(timer,Channel[timer]).Pin.nbr,LOW); // pulse this channel low if activated
-  }
+      digitalWrite( SERVO(timer,Channel[timer]).Pin.nbr,HIGH); // pulse this channel low if activated
+  } //carson switched the high/low!
 
   Channel[timer]++;    // increment to the next channel
   if( SERVO_INDEX(timer,Channel[timer]) < ServoCount && Channel[timer] < SERVOS_PER_TIMER) {
     *OCRnA = *TCNTn + SERVO(timer,Channel[timer]).ticks;
     if(SERVO(timer,Channel[timer]).Pin.isActive == true)     // check if activated
-      digitalWrite( SERVO(timer,Channel[timer]).Pin.nbr,HIGH); // its an active channel so pulse it high
+      digitalWrite( SERVO(timer,Channel[timer]).Pin.nbr,LOW); // its an active channel so pulse it high
   }
   else {
     // finished all channels so wait for the refresh period to expire before starting over
@@ -149,7 +149,7 @@ static void initISR(timer16_Sequence_t timer)
     TCNT3 = 0;              // clear the timer count
 #if defined(__AVR_ATmega128__)
     TIFR |= _BV(OCF3A);     // clear any pending interrupts;
-	ETIMSK |= _BV(OCIE3A);  // enable the output compare interrupt
+  ETIMSK |= _BV(OCIE3A);  // enable the output compare interrupt
 #else
     TIFR3 = _BV(OCF3A);     // clear any pending interrupts;
     TIMSK3 =  _BV(OCIE3A) ; // enable the output compare interrupt
@@ -224,7 +224,7 @@ Servo::Servo()
 {
   if( ServoCount < MAX_SERVOS) {
     this->servoIndex = ServoCount++;                    // assign a servo index to this instance
-	servos[this->servoIndex].ticks = usToTicks(DEFAULT_PULSE_WIDTH);   // store default values  - 12 Aug 2009
+  servos[this->servoIndex].ticks = usToTicks(DEFAULT_PULSE_WIDTH);   // store default values  - 12 Aug 2009
   }
   else
     this->servoIndex = INVALID_SERVO ;  // too many servos
@@ -261,7 +261,7 @@ void Servo::detach()
   }
 }
 
-void Servo::write(int value, bool invert)
+void Servo::write(int value)
 { 
   if(value < MIN_PULSE_WIDTH)
   {  // treat values less than 544 as angles in degrees (valid values in microseconds are handled as microseconds)
@@ -269,28 +269,24 @@ void Servo::write(int value, bool invert)
     if(value > 180) value = 180;
     value = map(value, 0, 180, SERVO_MIN(),  SERVO_MAX());
   }
-  this->writeMicroseconds(value, invert);
+  this->writeMicroseconds(value);
 }
 
-void Servo::writeMicroseconds(int value, bool invert)
+void Servo::writeMicroseconds(int value)
 {
   // calculate and store the values for the given channel
   byte channel = this->servoIndex;
   if( (channel < MAX_SERVOS) )   // ensure channel is valid
   {
-	  if (invert == 1)
-	  {
-		  value = REFRESH_INTERVAL - value; //Inverts pulse over the period between "updates" or pulses
-		  if (value > REFRESH_INTERVAL-SERVO_MIN())          // ensure pulse width is valid
-			  value = REFRESH_INTERVAL-SERVO_MIN();
-		  else if (value < REFRESH_INTERVAL-SERVO_MAX())
-			  value = REFRESH_INTERVAL-SERVO_MAX();
-	  }
-	  else 
-		  if (value < SERVO_MIN())          // ensure pulse width is valid
-			  value = SERVO_MIN();
-		  else if (value > SERVO_MAX())
-			  value = SERVO_MAX();
+
+     if( value < SERVO_MIN() )          // ensure pulse width is valid 
+      value = SERVO_MIN();  
+    else if( value > SERVO_MAX() )  
+      value = SERVO_MAX();
+
+   // if(invert==1){
+   // value = REFRESH_INTERVAL - value;
+  //}
 
     value = value - TRIM_DURATION;
     value = usToTicks(value);  // convert to ticks after compensating for interrupt overhead - 12 Aug 2009

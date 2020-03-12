@@ -185,10 +185,6 @@ DItemRevisionGUID=
 DocumentPath=Project Outputs for Battery_Monitor\Battery_Monitor.TXT
 DItemRevisionGUID=
 
-[GeneratedDocument21]
-DocumentPath=Project Outputs for Battery_Monitor\Design Rule Check - Battery_Monitor.html
-DItemRevisionGUID=
-
 [Configuration1]
 Name=Default Configuration
 ParameterCount=0

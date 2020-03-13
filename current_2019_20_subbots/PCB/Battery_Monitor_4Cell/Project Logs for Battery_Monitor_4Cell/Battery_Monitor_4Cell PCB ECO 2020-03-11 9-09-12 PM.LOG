@@ -1,0 +1,22 @@
+Removed Pin From Net: NetName=GND Pin=D1-1
+Removed Pin From Net: NetName=GND Pin=P2-2
+Added Component: Designator=AND(J14)
+Added Pin To Net: NetName=NetAND1_1 Pin=AND-1
+Added Pin To Net: NetName=NetAND1_2 Pin=AND-2
+Added Pin To Net: NetName=NetAND1_3 Pin=AND-3
+Added Pin To Net: NetName=NetAND1_4 Pin=AND-4
+Added Pin To Net: NetName=5V Pin=AND-5
+Added Pin To Net: NetName=NetAND1_6 Pin=AND-6
+Added Pin To Net: NetName=GND Pin=AND-7
+Added Pin To Net: NetName=AND_OUTPUT Pin=AND-12
+Added Pin To Net: NetName=NetAND1_6 Pin=AND-13
+Added Pin To Net: NetName=5V Pin=AND-14
+Change Net Name : Old Net Name=NetAND1_1 New Net Name=NetAND_1
+Change Net Name : Old Net Name=NetAND1_2 New Net Name=NetAND_2
+Change Net Name : Old Net Name=NetAND1_3 New Net Name=NetAND_3
+Change Net Name : Old Net Name=NetAND1_4 New Net Name=NetAND_4
+Change Net Name : Old Net Name=NetAND1_6 New Net Name=NetAND_6
+Added Pin To Net: NetName=NetD1_1 Pin=D1-1
+Added Pin To Net: NetName=NetD1_1 Pin=P2-2
+Added Net: Name=NetD1_1
+Added Member To Class: ClassName=Battery_Monitor_4Cell Member=Component AND Part Number: SN54HC11J

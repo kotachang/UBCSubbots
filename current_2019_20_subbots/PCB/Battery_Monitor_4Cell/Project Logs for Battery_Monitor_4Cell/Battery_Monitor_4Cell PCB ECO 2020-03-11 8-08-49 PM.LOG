@@ -1,0 +1,26 @@
+Removed Pin From Net: NetName=3.7 V Pin=Comparator1-11
+Removed Pin From Net: NetName=3.7 V Pin=D?-2
+Removed Pin From Net: NetName=3.7 V Pin=P1-2
+Removed Pin From Net: NetName=3.7 V Pin=P1-3
+Removed Pin From Net: NetName=3.7 V Pin=R9-1
+Removed Pin From Net: NetName=3.7 V Pin=R12-1
+Removed Pin From Net: NetName=3.7 V Pin=R13-1
+Change Component Designator: OldDesignator=D? NewDesignator=D1
+Added Pin To Net: NetName=3.7 V Pin=D1-1
+Change Net Name : Old Net Name=3.7 V New Net Name=GND
+Change Net Name : Old Net Name=Net5V Reg_3 New Net Name=5V
+Change Net Name : Old Net Name=NETLABEL118 New Net Name=CELL4
+Change Net Name : Old Net Name=NETLABEL119 New Net Name=CELL3
+Change Net Name : Old Net Name=NETLABEL120 New Net Name=CELL2
+Added Pin To Net: NetName=3.7 V Pin=Comparator1-11
+Added Pin To Net: NetName=3.7 V Pin=P1-2
+Added Pin To Net: NetName=3.7 V Pin=R13-1
+Added Net: Name=3.7 V
+Added Pin To Net: NetName=7.4V Pin=P1-3
+Added Pin To Net: NetName=7.4V Pin=R9-1
+Added Pin To Net: NetName=7.4V Pin=R12-1
+Added Net: Name=7.4V
+Added Pin To Net: NetName=NetD1_2 Pin=D1-2
+Added Pin To Net: NetName=NetD1_2 Pin=P2-1
+Added Pin To Net: NetName=NetD1_2 Pin=Q1-1
+Added Net: Name=NetD1_2

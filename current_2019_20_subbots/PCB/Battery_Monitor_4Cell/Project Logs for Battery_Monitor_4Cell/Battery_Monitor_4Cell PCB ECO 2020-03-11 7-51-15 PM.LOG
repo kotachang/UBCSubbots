@@ -1,0 +1,118 @@
+Removed Pin From Net: NetName=GND Pin=AND-7
+Removed Pin From Net: NetName=12VI Pin=Comparator-3
+Removed Pin From Net: NetName=3.6V Pin=Comparator-4
+Removed Pin From Net: NetName=3.6V Pin=Comparator-6
+Removed Pin From Net: NetName=3.6V Pin=Comparator-8
+Removed Pin From Net: NetName=GND Pin=Comparator-12
+Removed Pin From Net: NetName=GND Pin=OpAmp-4
+Removed Pin From Net: NetName=12VI Pin=OpAmp-8
+Removed Pin From Net: NetName=GND Pin=R5-1
+Change Component Footprint: Designator=P1 Old Footprint=HDR1X4 New Footprint=HDR1X5
+Change Component Comment : Designator=P1 Old Comment=Header 4 New Comment=Header 5
+Added Component: Designator=Comparator1(N14A)
+Added Component: Designator=D?(DO-41)
+Added Component: Designator=P2(HDR1X2)
+Added Component: Designator=Q1(ONSC-TO-92-3-29-11_AM_BL)
+Added Component: Designator=R11(AXIAL-0.3)
+Added Component: Designator=R12(AXIAL-0.3)
+Added Component: Designator=R13(AXIAL-0.3)
+Added Component: Designator=R14(AXIAL-0.3)
+Added Component: Designator=R15(AXIAL-0.3)
+Added Component: Designator=R16(AXIAL-0.3)
+Added Component: Designator=R17(AXIAL-0.3)
+Added Component: Designator=R18(AXIAL-0.3)
+Added Component: Designator=U1(N08E)
+Added Component: Designator=U2(N08E)
+Added Pin To Net: NetName=12VI Pin=Comparator1-3
+Added Pin To Net: NetName=3.6V Pin=Comparator1-4
+Added Pin To Net: NetName=3.6V Pin=Comparator1-6
+Added Pin To Net: NetName=3.6V Pin=Comparator1-8
+Added Pin To Net: NetName=3.6V Pin=Comparator1-10
+Added Pin To Net: NetName=GND Pin=Comparator1-11
+Added Pin To Net: NetName=GND Pin=Comparator1-12
+Added Pin To Net: NetName=GND Pin=D?-2
+Added Pin To Net: NetName=GND Pin=P1-1
+Added Pin To Net: NetName=GND Pin=P1-2
+Added Pin To Net: NetName=GND Pin=P1-3
+Added Pin To Net: NetName=12VI Pin=P1-5
+Added Pin To Net: NetName=GND Pin=P2-2
+Added Pin To Net: NetName=GND Pin=R6-1
+Added Pin To Net: NetName=GND Pin=R10-1
+Added Pin To Net: NetName=GND Pin=R12-1
+Added Pin To Net: NetName=GND Pin=R13-1
+Added Pin To Net: NetName=GND Pin=R14-1
+Added Pin To Net: NetName=GND Pin=U1-4
+Added Pin To Net: NetName=12VI Pin=U1-8
+Added Pin To Net: NetName=GND Pin=U2-4
+Added Pin To Net: NetName=12VI Pin=U2-8
+Change Net Name : Old Net Name=12VI New Net Name=14.8 V
+Change Net Name : Old Net Name=GND New Net Name=3.7 V
+Added Pin To Net: NetName=11.1 V Pin=P1-4
+Added Pin To Net: NetName=11.1 V Pin=R5-1
+Added Pin To Net: NetName=11.1 V Pin=R8-1
+Added Net: Name=11.1 V
+Added Pin To Net: NetName=Net5V Reg_3 Pin=5V Reg-3
+Added Pin To Net: NetName=Net5V Reg_3 Pin=Q1-3
+Added Pin To Net: NetName=Net5V Reg_3 Pin=R15-2
+Added Pin To Net: NetName=Net5V Reg_3 Pin=R16-2
+Added Pin To Net: NetName=Net5V Reg_3 Pin=R17-2
+Added Pin To Net: NetName=Net5V Reg_3 Pin=R18-2
+Added Net: Name=Net5V Reg_3
+Added Pin To Net: NetName=NetAND1_1 Pin=Comparator1-2
+Added Pin To Net: NetName=NetAND1_1 Pin=R15-1
+Added Net: Name=NetAND1_1
+Added Pin To Net: NetName=NetAND1_2 Pin=Comparator1-1
+Added Pin To Net: NetName=NetAND1_2 Pin=R16-1
+Added Net: Name=NetAND1_2
+Added Pin To Net: NetName=NetAND1_3 Pin=Comparator1-14
+Added Pin To Net: NetName=NetAND1_3 Pin=R17-1
+Added Net: Name=NetAND1_3
+Added Pin To Net: NetName=NetAND1_4 Pin=Comparator1-13
+Added Pin To Net: NetName=NetAND1_4 Pin=R18-1
+Added Net: Name=NetAND1_4
+Added Net: Name=NetAND1_6
+Added Pin To Net: NetName=NetAND1_12 Pin=Q1-2
+Added Net: Name=NetAND1_12
+Added Pin To Net: NetName=NetD?_1 Pin=D?-1
+Added Pin To Net: NetName=NetD?_1 Pin=P2-1
+Added Pin To Net: NetName=NetD?_1 Pin=Q1-1
+Added Net: Name=NetD?_1
+Added Pin To Net: NetName=NETLABEL118 Pin=Comparator1-5
+Added Pin To Net: NetName=NETLABEL118 Pin=R3-2
+Added Pin To Net: NetName=NETLABEL118 Pin=U1-1
+Added Net: Name=NETLABEL118
+Added Pin To Net: NetName=NETLABEL119 Pin=Comparator1-7
+Added Pin To Net: NetName=NETLABEL119 Pin=R7-2
+Added Pin To Net: NetName=NETLABEL119 Pin=U1-7
+Added Net: Name=NETLABEL119
+Added Pin To Net: NetName=NETLABEL120 Pin=Comparator1-9
+Added Pin To Net: NetName=NETLABEL120 Pin=R11-2
+Added Pin To Net: NetName=NETLABEL120 Pin=U2-1
+Added Net: Name=NETLABEL120
+Added Pin To Net: NetName=NetR3_1 Pin=R3-1
+Added Pin To Net: NetName=NetR3_1 Pin=R4-2
+Added Pin To Net: NetName=NetR3_1 Pin=U1-2
+Added Net: Name=NetR3_1
+Added Pin To Net: NetName=NetR5_2 Pin=R5-2
+Added Pin To Net: NetName=NetR5_2 Pin=R6-2
+Added Pin To Net: NetName=NetR5_2 Pin=U1-3
+Added Net: Name=NetR5_2
+Added Pin To Net: NetName=NetR7_1 Pin=R7-1
+Added Pin To Net: NetName=NetR7_1 Pin=R8-2
+Added Pin To Net: NetName=NetR7_1 Pin=U1-6
+Added Net: Name=NetR7_1
+Added Pin To Net: NetName=NetR9_2 Pin=R9-2
+Added Pin To Net: NetName=NetR9_2 Pin=R10-2
+Added Pin To Net: NetName=NetR9_2 Pin=U1-5
+Added Net: Name=NetR9_2
+Added Pin To Net: NetName=NetR11_1 Pin=R11-1
+Added Pin To Net: NetName=NetR11_1 Pin=R12-2
+Added Pin To Net: NetName=NetR11_1 Pin=U2-2
+Added Net: Name=NetR11_1
+Added Pin To Net: NetName=NetR13_2 Pin=R13-2
+Added Pin To Net: NetName=NetR13_2 Pin=R14-2
+Added Pin To Net: NetName=NetR13_2 Pin=U2-3
+Added Net: Name=NetR13_2
+Added Class: Name=Battery_Monitor_4Cell
+Change Room Name: Old Name=Battery_Monitor New Name=Battery_Monitor_4Cell
+Change Room Scope: Old Scope=InComponentClass('Battery_Monitor') New Scope=InComponentClass('Battery_Monitor_4Cell')

@@ -144,8 +144,8 @@ Generating : Top Solder
 
 
 Used DCodes :
-    D21
-    D22
+    D11
+    D12
     D31
     D32
     D33
@@ -170,8 +170,8 @@ Generating : Bottom Solder
 
 
 Used DCodes :
-    D21
-    D22
+    D11
+    D12
     D31
     D32
     D33

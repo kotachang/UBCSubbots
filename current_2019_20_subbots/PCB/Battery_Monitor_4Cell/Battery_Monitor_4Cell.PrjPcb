@@ -186,10 +186,6 @@ DItemRevisionGUID=
 DocumentPath=Project Outputs for Battery_Monitor_4Cell\Battery_Monitor_4Cell.TXT
 DItemRevisionGUID=
 
-[GeneratedDocument21]
-DocumentPath=Project Outputs for Battery_Monitor_4Cell\Design Rule Check - Battery_Monitor_4Cell.html
-DItemRevisionGUID=
-
 [Configuration1]
 Name=Default Configuration
 ParameterCount=0

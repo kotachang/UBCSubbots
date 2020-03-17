@@ -1,0 +1,11 @@
+Change Component Designator: OldDesignator=Pressure Sensor Board  NewDesignator=Pressure Sensor Board
+Added Pin To Net: NetName=GND Pin=Motor1-3
+Added Pin To Net: NetName=GND Pin=Motor2-3
+Added Pin To Net: NetName=GND Pin=Motor3-3
+Added Pin To Net: NetName=GND Pin=Motor4-3
+Added Pin To Net: NetName=GND Pin=Motor5-3
+Added Pin To Net: NetName=GND Pin=Motor6-3
+Added Pin To Net: NetName=GND Pin=Opto_1-5
+Added Pin To Net: NetName=GND Pin=Opto_2-5
+Added Pin To Net: NetName=GND Pin=Opto_3-5
+Added Member To Class: ClassName=Optocoupler_circuit Member=Component Pressure Sensor Board Header 4

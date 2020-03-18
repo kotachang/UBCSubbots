@@ -1,0 +1,15 @@
+CAMtasticDXP Drill Report
+Serial Number:0000-00-00000
+Drill File: C:\Users\Kota Chang\Desktop\Subbots\UBCSubbots\current_2019_20_subbots\thruster_system\PCB\Project Outputs for Optocoupler_circuit\cam.drl
+Format: 2.3
+Units: Metric (mm.)
+Step & Repeat Codes Used: NO
+
+
+TOOL		SIZE		COUNT
+====		======		=====
+
+ 1 		0.8500		24
+ 2 		0.9000		86
+ 3 		1.1000		3
+ 4 		3.2000		4
